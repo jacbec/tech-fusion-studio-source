@@ -1,0 +1,77 @@
+.tabs .nav-tabs {
+    border-bottom: none;
+	background-color: #663399;
+}
+.tabs .nav-tabs>li {
+    position: relative;
+	margin: 0;
+}
+.tabs .nav-tabs>li>a {
+    color: #FFF;
+    height: 36px;
+    line-height: auto;
+	margin: 0;
+	border-top: none;
+	border-right: 1px solid rgba(0,0,0,0.15) !important;
+	border-bottom: none;
+	border-left: 1px solid rgba(255,255,255,0.2) !important;
+    border-radius: 0;
+	 -webkit-border-radius: 0;
+	  -moz-border-radius: 0;
+}
+
+.tabs .nav-tabs>li>a .menu-active {
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+	width: 100%;
+	bottom: -8px;
+	left: 0;
+	visibility: hidden;
+}
+.tabs .nav-tabs>li.active>a,
+.tabs .nav-tabs>li.active>a:hover,
+.tabs .nav-tabs>li.active>a:focus {
+    color: #FFF;
+	border: none;
+	background: rgba(0,0,0,0.2);
+}
+.tabs .nav-tabs>li.active>a .menu-active,
+.tabs .nav-tabs>li.active>a:hover .menu-active,
+.tabs .nav-tabs>li.active>a:focus .menu-active {
+	visibility: visible;
+}
+.tabs .nav-tabs>li:last-child {
+	border-right: 1px solid rgba(255,255,255,0.2);
+}
+.tabs .nav-tabs>li>a:hover {
+	background-color: rgba(255,255,255,0.15);
+}
+.tabs .tab-content {
+    position: relative;
+	background-color: #FFF;
+}
+
+.btn {
+	padding:6px 15px;
+}
+
+.btn-xs {
+    font-family: 'Open Sans','arial';
+    font-size:11px;
+    color: #FFF;
+    padding:4px 8px;
+    background-color: #663399;
+}
+
+.btn-xs:hover,
+.btn-xs:focus,
+.btn-xs:active,
+.btn-xs.active {
+    border-color: #FFF;
+    color: #FFF;
+    background-color: #663399;
+    transition: all .75s;
+	 -webkit-transition: all .75s;
+       -moz-transition: all .75s;
+}

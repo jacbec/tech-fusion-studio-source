@@ -1,0 +1,275 @@
+/*
+	Forums Table Styling ------------------------------------------------------------------------------------
+*/
+.table {
+	border: none;
+}
+
+.table thead > tr > th:nth-child(2) {
+	text-align: center;
+	width: 85px;
+}
+
+.table thead > tr > th:nth-child(3),
+.table tbody > tr > td:nth-child(3) {
+	text-align: center;
+	width: 85px;
+}
+
+.table thead > tr > th:nth-child(4),
+.table tbody > tr > td:nth-child(4) {
+	text-align: center;
+	width: 85px;
+}
+
+.table thead > tr > th:last-child,
+.table tbody > tr > td:last-child {
+	text-align: left;
+	width: 250px;
+	border-right: 0;
+}
+
+/*
+	Top Label Styling ------------------------------------------------------------------------------------
+*/
+.table thead > tr > th {
+	border-right: 2px solid #663399;
+	border-bottom: 1px solid #663399;
+}
+
+.table thead > tr > th > a > i {
+	cursor: pointer;
+	color: #FFF;
+	padding-right: 5px;
+}
+
+.table thead > tr > th > a > i:hover {
+	color: #000;
+}
+
+.top-label {
+	color: #FFF;
+	padding: 0px;
+	margin: 0px;
+	background: #663399;
+	z-index: 1;
+}
+
+.top-label tr {
+	padding: 0px;
+	margin: 0px;
+}
+
+.top-label td {
+	padding: 0px;
+	margin: 0px;
+}
+
+/*
+	Body Styling ------------------------------------------------------------------------------------
+*/
+.table tbody > tr > td {
+     vertical-align: middle;
+		 height: 100%;
+		 border-right: 1px solid #DDDDDD;
+	 	 border-bottom: 1px solid #DDDDDD;
+}
+
+.body {
+	padding: 0px;
+	margin: 0px;
+	background: #FFF;
+	box-shadow: inset 2px 5px 4px rgba(0,0,0, 0.4), inset -2px -5px 4px rgba(0,0,0, 0.4);
+	-webkit-box-shadow: inset 2px 5px 4px rgba(0,0,0, 0.4), inset -2px 0px 4px rgba(0,0,0, 0.4);
+	-moz-box-shadow: inset 2px 5px 4px rgba(0,0,0, 0.4), inset -2px 0px 4px rgba(0,0,0, 0.4);
+}
+
+.body tr {
+	padding: 0px;
+	margin: 0px;
+}
+
+.body tr td:first-child {
+	width: 35px;
+}
+
+.body td {
+	padding: 0px;
+	margin: 0px;
+}
+
+.body p {
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+/*
+	Bottom Label Styling ------------------------------------------------------------------------------------
+*/
+.bottom-label {
+	text-align: center;
+	color: #FFF;
+	padding: 0px;
+	margin: 0px;
+	background: #663399;
+	z-index: 1;
+}
+
+.bottom-label  tr {
+	padding: 0px;
+	margin: 0px;
+}
+
+.bottom-label td {
+	padding: 0px;
+	margin: 0px;
+}
+
+.bottom-label td a {
+	color: #FFF;
+}
+
+.bottom-label td a:hover {
+	color: #000;
+}
+
+.row-1 {
+	width: 65%;
+}
+
+.row-2 {
+	width: 15%;
+}
+
+.row-3 {
+	width: 15%;
+}
+
+/*
+	Forums Styling ------------------------------------------------------------------------------------
+*/
+.forums-addon {
+  transform: translateX(0);
+  transition: transform 1s ease;
+}
+
+.forums-addon.open {
+  transform: translateX(100%);
+  transition: transform 1s ease;
+}
+
+.col-lg-10 {
+  transform: translateX(0);
+  transition: transform 1s ease;
+}
+
+.col-lg-10.open {
+  transform: translateX(250px);
+  transition: transform 1s ease;
+}
+
+/*
+	Forums Form Styling ------------------------------------------------------------------------------------
+*/
+section.forums {
+    background-color: #FFF;
+}
+
+section.forums .section-heading {
+    color: #000;
+}
+
+section.forums .form-group {
+    margin-bottom: 25px;
+}
+
+section.forums .form-group input,
+section.forums .form-group textarea {
+    color: #000;
+    padding: 20px;
+    border-color: #663399;
+}
+
+section.forums .form-group input.form-control {
+    height: auto;
+}
+
+section.forums .form-group textarea.form-control {
+    height: 236px;
+}
+
+section.forums .form-control:hover {
+    border-color: #FFF;
+    box-shadow: none;
+		-webkit-transition: all .75s;
+	  -moz-transition: all .75s;
+	  transition: all .75s;
+}
+
+section.forums .form-control:focus {
+    border-color: #663399;
+    box-shadow: none;
+		-webkit-transition: all .75s;
+	  -moz-transition: all .75s;
+	  transition: all .75s;
+}
+
+section.forums::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: 'Open Sans','arial';
+    font-weight: 400;
+    color: #DDD;
+}
+
+section.forums:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: 'Open Sans','arial';
+    font-weight: 400;
+    color: #DDD;
+}
+
+section.forums::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: 'Open Sans','arial';
+    font-weight: 400;
+    color: #DDD;
+}
+
+section.forums:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: 'Open Sans','arial';
+    font-weight: 400;
+    color: #DDD;
+}
+
+section.forums .text-danger {
+    color: #e74c3c;
+}
+
+section.forums .btn-xl {
+    padding: 20px 40px;
+	margin-bottom: 50px;
+    border-color: #663399;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Open Sans','arial';
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFF;
+    background-color: #663399;
+}
+
+section.forums .btn-xl:hover,
+section.forums .btn-xl:focus,
+section.forums .btn-xl:active,
+section.forums .btn-xl.active {
+    border-color: #FFF;
+    color: #FFF;
+    background-color: #663399;
+		-webkit-transition: all .75s;
+	  -moz-transition: all .75s;
+	  transition: all .75s;
+}
