@@ -1,7 +1,7 @@
 # tech-fusion-studio-source
 This is the source code to my website Tech Fusion Studio. To get this website to work you will need to do a couple things. 
 
-# If working in windows: 
+# If working in windows 
 You will need to add these IP mappings to your hosts file located - "C:\Windows\System32\drivers\etc"
 127.0.0.1       forums.techfusionstudio.comm
 127.0.0.1       store.techfusionstudio.comm
@@ -10,16 +10,13 @@ You will need to add these IP mappings to your hosts file located - "C:\Windows\
 
 If working in XAMPP:
 You will need to add these domains to you httpd-vhosts.conf file located - "C:\xampp\apache\conf\extra"
-####################DEFAULT####################
 NameVirtualHost 127.0.0.1:80
 
 <VirtualHost 127.0.0.1:80>
 	DocumentRoot "C:/xampp/htdocs/"
 	ServerName localhost
 </VirtualHost>
-####################DEFAULT####################
 
-####################TECH FUSION STUDIOS####################
 <VirtualHost tech_fusion_studios>
 	DocumentRoot "C:/xampp/htdocs/tech_fusion_studios"
 	ServerName tech_fusion_studios
@@ -29,14 +26,10 @@ NameVirtualHost 127.0.0.1:80
 
 	<Directory "C:/xampp/htdocs/tech_fusion_studios">
 		Options Indexes FollowSymLinks MultiViews
-    AllowOverride all
-    Order Deny,Allow
-    Allow from all
-    Require all granted
-		#Options Indexes FollowSymLinks
-		#AllowOverride All
-		#Order allow,deny
-		#Allow from all
+    		AllowOverride all
+    		Order Deny,Allow
+    		Allow from all
+    		Require all granted
 	</Directory>
 </VirtualHost>
 
@@ -50,14 +43,10 @@ NameVirtualHost 127.0.0.1:80
 
 	<Directory "C:/xampp/htdocs/tech_fusion_studios/forums.techfusionstudios.comm">
 		Options Indexes FollowSymLinks MultiViews
-    AllowOverride all
-    Order Deny,Allow
-    Allow from all
-    Require all granted
-		#Options Indexes FollowSymLinks
-		#AllowOverride All
-		#Order allow,deny
-		#Allow from all
+    		AllowOverride all
+    		Order Deny,Allow
+    		Allow from all
+    		Require all granted
 	</Directory>
 </VirtualHost>
 
@@ -71,14 +60,10 @@ NameVirtualHost 127.0.0.1:80
 
 	<Directory "C:/xampp/htdocs/tech_fusion_studios/store.techfusionstudios.comm">
 		Options Indexes FollowSymLinks MultiViews
-    AllowOverride all
-    Order Deny,Allow
-    Allow from all
-    Require all granted
-		#Options Indexes FollowSymLinks
-		#AllowOverride All
-		#Order allow,deny
-		#Allow from all
+    		AllowOverride all
+    		Order Deny,Allow
+    		Allow from all
+    		Require all granted
 	</Directory>
 </VirtualHost>
 
@@ -92,14 +77,10 @@ NameVirtualHost 127.0.0.1:80
 
 	<Directory "C:/xampp/htdocs/tech_fusion_studios/style.techfusionstudios.comm">
 		Options Indexes FollowSymLinks MultiViews
-    AllowOverride all
-    Order Deny,Allow
-    Allow from all
-    Require all granted
-		#Options Indexes FollowSymLinks
-		#AllowOverride All
-		#Order allow,deny
-		#Allow from all
+    		AllowOverride all
+    		Order Deny,Allow
+    		Allow from all
+    		Require all granted
 	</Directory>
 </VirtualHost>
 
@@ -113,19 +94,14 @@ NameVirtualHost 127.0.0.1:80
 
 	<Directory "C:/xampp/htdocs/tech_fusion_studios/techfusionstudios.comm">
 		Options Indexes FollowSymLinks MultiViews
-    AllowOverride all
-    Order Deny,Allow
-    Allow from all
-    Require all granted
-		#Options Indexes FollowSymLinks
-		#AllowOverride All
-		#Order allow,deny
-		#Allow from all
+    		AllowOverride all
+    		Order Deny,Allow
+    		Allow from all
+    		Require all granted
 	</Directory>
 </VirtualHost>
-####################TECH FUSION STUDIOS####################
 
-# If working in Ubuntu:
+# If working in Ubuntu
 You will need to add these IP mappings to your hosts file located - "/etc"
 127.0.0.1       forums.techfusionstudio.comm
 127.0.0.1       store.techfusionstudio.comm
@@ -144,14 +120,10 @@ forums.techfusionstudio.com.conf:
 	
 	<Directory /var/www/tech_fusion_studio/forums.techfusionstudio.com>
 		Options Indexes FollowSymLinks MultiViews
-    AllowOverride all
-    Order Deny,Allow
-    Allow from all
-    Require all granted
-		#Options Indexes FollowSymLinks
-		#AllowOverride All
-		#Order allow,deny
-		#Allow from all
+    		AllowOverride all
+    		Order Deny,Allow
+    		Allow from all
+    		Require all granted
 	</Directory>
 </VirtualHost>
 
@@ -166,14 +138,10 @@ store.techfusionstudio.com.conf:
 
 	<Directory /var/www/tech_fusion_studio/store.techfusionstudio.com>
 		Options Indexes FollowSymLinks MultiViews
-    AllowOverride all
-    Order Deny,Allow
-    Allow from all
-    Require all granted
-		#Options Indexes FollowSymLinks
-		#AllowOverride All
-		#Order allow,deny
-		#Allow from all
+    		AllowOverride all
+    		Order Deny,Allow
+    		Allow from all
+    		Require all granted
 	</Directory>
 </VirtualHost>
 
@@ -188,14 +156,10 @@ style.techfusionstudio.com.conf:
 
 	<Directory /var/www/tech_fusion_studio/style.techfusionstudio.com>
 		Options Indexes FollowSymLinks MultiViews
-    AllowOverride all
-    Order Deny,Allow
-    Allow from all
-    Require all granted
-		#Options Indexes FollowSymLinks
-		#AllowOverride All
-		#Order allow,deny
-		#Allow from all
+    		AllowOverride all
+    		Order Deny,Allow
+    		Allow from all
+   		Require all granted
 	</Directory>
 </VirtualHost>
 
@@ -210,14 +174,10 @@ techfusionstudio.com.conf:
 
 	<Directory /var/www/tech_fusion_studio/techfusionstudios.com>
 		Options Indexes FollowSymLinks MultiViews
-    AllowOverride all
-    Order Deny,Allow
-    Allow from all
-    Require all granted
-		#Options Indexes FollowSymLinks
-		#AllowOverride All
-		#Order allow,deny
-		#Allow from all
+    		AllowOverride all
+    		Order Deny,Allow
+    		Allow from all
+    		Require all granted
 	</Directory>
 </VirtualHost>
 
@@ -231,14 +191,10 @@ tech_fusion_studio.conf:
 
 	<Directory /var/www/tech_fusion_studio>
 		Options Indexes FollowSymLinks MultiViews
-    AllowOverride all
-    Order Deny,Allow
-    Allow from all
-    Require all granted
-		#Options Indexes FollowSymLinks
-		#AllowOverride All
-		#Order allow,deny
-		#Allow from all
+    		AllowOverride all
+    		Order Deny,Allow
+    		Allow from all
+    		Require all granted
 	</Directory>
 </VirtualHost>
 
