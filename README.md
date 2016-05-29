@@ -3,13 +3,19 @@ This is the source code to my website Tech Fusion Studio. To get this website to
 
 # If working in windows 
 You will need to add these IP mappings to your hosts file located - "C:\Windows\System32\drivers\etc"
+
 127.0.0.1       forums.techfusionstudio.comm
+
 127.0.0.1       store.techfusionstudio.comm
+
 127.0.0.1       style.techfusionstudio.comm
+
 127.0.0.1       techfusionstudio.comm
 
 If working in XAMPP:
+
 You will need to add these domains to you httpd-vhosts.conf file located - "C:\xampp\apache\conf\extra"
+
 NameVirtualHost 127.0.0.1:80
 
 <VirtualHost 127.0.0.1:80>
@@ -103,13 +109,19 @@ NameVirtualHost 127.0.0.1:80
 
 # If working in Ubuntu
 You will need to add these IP mappings to your hosts file located - "/etc"
+
 127.0.0.1       forums.techfusionstudio.comm
+
 127.0.0.1       store.techfusionstudio.comm
+
 127.0.0.1       style.techfusionstudio.comm
+
 127.0.0.1       techfusionstudio.comm
 
 You will need to add these .conf files to sites-available folder located - "/etc/apache2/sites-available"
+
 forums.techfusionstudio.com.conf:
+
 <VirtualHost *:80>
 	DocumentRoot /var/www/tech_fusion_studio/forums.techfusionstudio.com
 	ServerName www.forums.techfusionstudio.comm
@@ -128,6 +140,7 @@ forums.techfusionstudio.com.conf:
 </VirtualHost>
 
 store.techfusionstudio.com.conf:
+
 <VirtualHost *:80>
 	DocumentRoot /var/www/tech_fusion_studio/store.techfusionstudio.com
 	ServerName www.store.techfusionstudio.comm
@@ -146,6 +159,7 @@ store.techfusionstudio.com.conf:
 </VirtualHost>
 
 style.techfusionstudio.com.conf:
+
 <VirtualHost *:80>
 	DocumentRoot /var/www/tech_fusion_studio/style.techfusionstudio.com
 	ServerName www.style.techfusionstudio.comm
@@ -164,6 +178,7 @@ style.techfusionstudio.com.conf:
 </VirtualHost>
 
 techfusionstudio.com.conf:
+
 <VirtualHost *:80>
 	DocumentRoot /var/www/tech_fusion_studio/techfusionstudio.com
 	ServerName www.techfusionstudio.comm
@@ -182,6 +197,7 @@ techfusionstudio.com.conf:
 </VirtualHost>
 
 tech_fusion_studio.conf:
+
 <VirtualHost *:80>
 	DocumentRoot /var/www/tech_fusion_studio
 	ServerName tech_fusion_studio
@@ -199,9 +215,13 @@ tech_fusion_studio.conf:
 </VirtualHost>
 
 You will then need to enable them by running these commands:
+
 sudo a2ensite forums.techfusionstudio.com
+
 sudo a2ensite store.techfusionstudio.com
+
 sudo a2ensite style.techfusionstudio.com
+
 sudo a2ensite techfusionstudio.com
 
 Then restart apache2: sudo systemctl restart apache2
